@@ -27,8 +27,3 @@ Then
 docker compose exec box bash
 ```
 
-## Running the script
-
-In the container, run:
-```
-```
