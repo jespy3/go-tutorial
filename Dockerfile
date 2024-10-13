@@ -5,7 +5,9 @@ RUN apt update && apt upgrade -y && apt install -y \
   vim \
   wget
 
-RUN wget https://go.dev/dl/go1.23.2.linux-arm64.tar.gz
+# Download Go tarball and extract from compressed file
+RUN wget https://go.dev/dl/go1.23.2.linux-arm64.tar.gz \
+  && tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz
 
 ENV PATH=$PATH:/usr/local/go/bin
 
