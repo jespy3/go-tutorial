@@ -1,4 +1,4 @@
-module example/hello
+module example.com/hello_quote
 
 go 1.23.2
 
